@@ -102,3 +102,4 @@ realtek                24576  1
 rtsx_pci               77824  2 rtsx_pci_sdmmc,rtsx_pci_ms
 wmi                    32768  0
 video                  57344  1 i915
+
