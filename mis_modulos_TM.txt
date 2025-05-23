@@ -1,103 +1,104 @@
-mimodulo 16384 0 - Live 0x0000000000000000 (OE)
-rfcomm 81920 4 - Live 0x0000000000000000
-vboxnetadp 28672 0 - Live 0x0000000000000000 (OE)
-vboxnetflt 28672 0 - Live 0x0000000000000000 (OE)
-vboxdrv 499712 2 vboxnetadp,vboxnetflt, Live 0x0000000000000000 (OE)
-ccm 20480 3 - Live 0x0000000000000000
-cmac 16384 3 - Live 0x0000000000000000
-algif_hash 16384 1 - Live 0x0000000000000000
-algif_skcipher 16384 1 - Live 0x0000000000000000
-af_alg 24576 6 algif_hash,algif_skcipher, Live 0x0000000000000000
-bnep 24576 2 - Live 0x0000000000000000
-nls_iso8859_1 16384 1 - Live 0x0000000000000000
-intel_rapl_msr 20480 0 - Live 0x0000000000000000
-snd_hda_codec_hdmi 61440 1 - Live 0x0000000000000000
-mei_hdcp 24576 0 - Live 0x0000000000000000
-uvcvideo 98304 0 - Live 0x0000000000000000
-videobuf2_vmalloc 20480 1 uvcvideo, Live 0x0000000000000000
-videobuf2_memops 20480 1 videobuf2_vmalloc, Live 0x0000000000000000
-videobuf2_v4l2 24576 1 uvcvideo, Live 0x0000000000000000
-videobuf2_common 57344 2 uvcvideo,videobuf2_v4l2, Live 0x0000000000000000
-snd_hda_codec_realtek 143360 1 - Live 0x0000000000000000
-snd_hda_codec_generic 81920 1 snd_hda_codec_realtek, Live 0x0000000000000000
-ledtrig_audio 16384 2 snd_hda_codec_realtek,snd_hda_codec_generic, Live 0x0000000000000000
-videodev 225280 3 uvcvideo,videobuf2_v4l2,videobuf2_common, Live 0x0000000000000000
-snd_hda_intel 53248 4 - Live 0x0000000000000000
-snd_intel_dspcfg 28672 1 snd_hda_intel, Live 0x0000000000000000
-snd_hda_codec 139264 4 snd_hda_codec_hdmi,snd_hda_codec_realtek,snd_hda_codec_generic,snd_hda_intel, Live 0x0000000000000000
-snd_hda_core 90112 5 snd_hda_codec_hdmi,snd_hda_codec_realtek,snd_hda_codec_generic,snd_hda_intel,snd_hda_codec, Live 0x0000000000000000
-snd_hwdep 20480 1 snd_hda_codec, Live 0x0000000000000000
-mc 53248 4 uvcvideo,videobuf2_v4l2,videobuf2_common,videodev, Live 0x0000000000000000
-btusb 57344 0 - Live 0x0000000000000000
-btrtl 24576 1 btusb, Live 0x0000000000000000
-btbcm 16384 1 btusb, Live 0x0000000000000000
-btintel 24576 1 btusb, Live 0x0000000000000000
-snd_pcm 110592 4 snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec,snd_hda_core, Live 0x0000000000000000
-intel_rapl_common 24576 1 intel_rapl_msr, Live 0x0000000000000000
-bluetooth 561152 31 rfcomm,bnep,btusb,btrtl,btbcm,btintel, Live 0x0000000000000000
-x86_pkg_temp_thermal 20480 0 - Live 0x0000000000000000
-intel_powerclamp 20480 0 - Live 0x0000000000000000
-coretemp 20480 0 - Live 0x0000000000000000
-snd_seq_midi 20480 0 - Live 0x0000000000000000
-snd_seq_midi_event 16384 1 snd_seq_midi, Live 0x0000000000000000
-ecdh_generic 16384 2 bluetooth, Live 0x0000000000000000
-ecc 28672 1 ecdh_generic, Live 0x0000000000000000
-kvm_intel 286720 0 - Live 0x0000000000000000
-snd_rawmidi 36864 1 snd_seq_midi, Live 0x0000000000000000
-kvm 667648 1 kvm_intel, Live 0x0000000000000000
-binfmt_misc 24576 1 - Live 0x0000000000000000
-crct10dif_pclmul 16384 1 - Live 0x0000000000000000
-ghash_clmulni_intel 16384 0 - Live 0x0000000000000000
-cryptd 24576 1 ghash_clmulni_intel, Live 0x0000000000000000
-rapl 20480 0 - Live 0x0000000000000000
-intel_cstate 20480 0 - Live 0x0000000000000000
-snd_seq 73728 2 snd_seq_midi,snd_seq_midi_event, Live 0x0000000000000000
-iwlmvm 385024 0 - Live 0x0000000000000000
-mac80211 851968 1 iwlmvm, Live 0x0000000000000000
-libarc4 16384 1 mac80211, Live 0x0000000000000000
-i915 2002944 19 - Live 0x0000000000000000
-joydev 24576 0 - Live 0x0000000000000000
-input_leds 16384 0 - Live 0x0000000000000000
-iwlwifi 335872 1 iwlmvm, Live 0x0000000000000000
-snd_seq_device 16384 3 snd_seq_midi,snd_rawmidi,snd_seq, Live 0x0000000000000000
-snd_timer 40960 2 snd_pcm,snd_seq, Live 0x0000000000000000
-serio_raw 20480 0 - Live 0x0000000000000000
-cfg80211 712704 3 iwlmvm,mac80211,iwlwifi, Live 0x0000000000000000
-snd 90112 19 snd_hda_codec_hdmi,snd_hda_codec_realtek,snd_hda_codec_generic,snd_hda_intel,snd_hda_codec,snd_hwdep,snd_pcm,snd_rawmidi,snd_seq,snd_seq_device,snd_timer, Live 0x0000000000000000
-drm_kms_helper 184320 1 i915, Live 0x0000000000000000
-rtsx_pci_ms 24576 0 - Live 0x0000000000000000
-memstick 20480 1 rtsx_pci_ms, Live 0x0000000000000000
-i2c_algo_bit 16384 1 i915, Live 0x0000000000000000
-mei_me 40960 1 - Live 0x0000000000000000
-fb_sys_fops 16384 1 drm_kms_helper, Live 0x0000000000000000
-mei 106496 3 mei_hdcp,mei_me, Live 0x0000000000000000
-soundcore 16384 1 snd, Live 0x0000000000000000
-syscopyarea 16384 1 drm_kms_helper, Live 0x0000000000000000
-sysfillrect 16384 1 drm_kms_helper, Live 0x0000000000000000
-sysimgblt 16384 1 drm_kms_helper, Live 0x0000000000000000
-mac_hid 16384 0 - Live 0x0000000000000000
-sch_fq_codel 20480 2 - Live 0x0000000000000000
-msr 16384 0 - Live 0x0000000000000000
-parport_pc 45056 0 - Live 0x0000000000000000
-ppdev 24576 0 - Live 0x0000000000000000
-lp 20480 0 - Live 0x0000000000000000
-parport 53248 3 parport_pc,ppdev,lp, Live 0x0000000000000000
-ramoops 28672 0 - Live 0x0000000000000000
-reed_solomon 24576 1 ramoops, Live 0x0000000000000000
-drm 495616 8 i915,drm_kms_helper, Live 0x0000000000000000
-efi_pstore 16384 0 - Live 0x0000000000000000
-ip_tables 32768 0 - Live 0x0000000000000000
-x_tables 40960 1 ip_tables, Live 0x0000000000000000
-autofs4 45056 2 - Live 0x0000000000000000
-rtsx_pci_sdmmc 28672 0 - Live 0x0000000000000000
-ahci 40960 2 - Live 0x0000000000000000
-crc32_pclmul 16384 0 - Live 0x0000000000000000
-libahci 36864 1 ahci, Live 0x0000000000000000
-psmouse 155648 0 - Live 0x0000000000000000
-r8169 90112 0 - Live 0x0000000000000000
-lpc_ich 24576 0 - Live 0x0000000000000000
-i2c_i801 32768 0 - Live 0x0000000000000000
-realtek 24576 1 - Live 0x0000000000000000
-rtsx_pci 77824 2 rtsx_pci_ms,rtsx_pci_sdmmc, Live 0x0000000000000000
-wmi 32768 0 - Live 0x0000000000000000
-video 57344 1 i915, Live 0x0000000000000000
+Module                  Size  Used by
+mimodulo               16384  0
+rfcomm                 81920  4
+vboxnetadp             28672  0
+vboxnetflt             28672  0
+vboxdrv               499712  2 vboxnetadp,vboxnetflt
+ccm                    20480  3
+cmac                   16384  3
+algif_hash             16384  1
+algif_skcipher         16384  1
+af_alg                 24576  6 algif_hash,algif_skcipher
+bnep                   24576  2
+nls_iso8859_1          16384  1
+intel_rapl_msr         20480  0
+snd_hda_codec_hdmi     61440  1
+mei_hdcp               24576  0
+uvcvideo               98304  0
+videobuf2_vmalloc      20480  1 uvcvideo
+videobuf2_memops       20480  1 videobuf2_vmalloc
+videobuf2_v4l2         24576  1 uvcvideo
+videobuf2_common       57344  2 videobuf2_v4l2,uvcvideo
+snd_hda_codec_realtek   143360  1
+snd_hda_codec_generic    81920  1 snd_hda_codec_realtek
+ledtrig_audio          16384  2 snd_hda_codec_generic,snd_hda_codec_realtek
+videodev              225280  3 videobuf2_v4l2,uvcvideo,videobuf2_common
+snd_hda_intel          53248  4
+snd_intel_dspcfg       28672  1 snd_hda_intel
+snd_hda_codec         139264  4 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec_realtek
+snd_hda_core           90112  5 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec,snd_hda_codec_realtek
+snd_hwdep              20480  1 snd_hda_codec
+mc                     53248  4 videodev,videobuf2_v4l2,uvcvideo,videobuf2_common
+btusb                  57344  0
+btrtl                  24576  1 btusb
+btbcm                  16384  1 btusb
+btintel                24576  1 btusb
+snd_pcm               110592  4 snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec,snd_hda_core
+intel_rapl_common      24576  1 intel_rapl_msr
+bluetooth             561152  31 btrtl,btintel,btbcm,bnep,btusb,rfcomm
+x86_pkg_temp_thermal    20480  0
+intel_powerclamp       20480  0
+coretemp               20480  0
+snd_seq_midi           20480  0
+snd_seq_midi_event     16384  1 snd_seq_midi
+ecdh_generic           16384  2 bluetooth
+ecc                    28672  1 ecdh_generic
+kvm_intel             286720  0
+snd_rawmidi            36864  1 snd_seq_midi
+kvm                   667648  1 kvm_intel
+binfmt_misc            24576  1
+crct10dif_pclmul       16384  1
+ghash_clmulni_intel    16384  0
+cryptd                 24576  1 ghash_clmulni_intel
+rapl                   20480  0
+intel_cstate           20480  0
+snd_seq                73728  2 snd_seq_midi,snd_seq_midi_event
+iwlmvm                385024  0
+mac80211              851968  1 iwlmvm
+libarc4                16384  1 mac80211
+i915                 2002944  19
+joydev                 24576  0
+input_leds             16384  0
+iwlwifi               335872  1 iwlmvm
+snd_seq_device         16384  3 snd_seq,snd_seq_midi,snd_rawmidi
+snd_timer              40960  2 snd_seq,snd_pcm
+serio_raw              20480  0
+cfg80211              712704  3 iwlmvm,iwlwifi,mac80211
+snd                    90112  19 snd_hda_codec_generic,snd_seq,snd_seq_device,snd_hda_codec_hdmi,snd_hwdep,snd_hda_intel,snd_hda_codec,snd_hda_codec_realtek,snd_timer,snd_pcm,snd_rawmidi
+drm_kms_helper        184320  1 i915
+rtsx_pci_ms            24576  0
+memstick               20480  1 rtsx_pci_ms
+i2c_algo_bit           16384  1 i915
+mei_me                 40960  1
+fb_sys_fops            16384  1 drm_kms_helper
+mei                   106496  3 mei_hdcp,mei_me
+soundcore              16384  1 snd
+syscopyarea            16384  1 drm_kms_helper
+sysfillrect            16384  1 drm_kms_helper
+sysimgblt              16384  1 drm_kms_helper
+mac_hid                16384  0
+sch_fq_codel           20480  2
+msr                    16384  0
+parport_pc             45056  0
+ppdev                  24576  0
+lp                     20480  0
+parport                53248  3 parport_pc,lp,ppdev
+ramoops                28672  0
+reed_solomon           24576  1 ramoops
+drm                   495616  8 drm_kms_helper,i915
+efi_pstore             16384  0
+ip_tables              32768  0
+x_tables               40960  1 ip_tables
+autofs4                45056  2
+rtsx_pci_sdmmc         28672  0
+ahci                   40960  2
+crc32_pclmul           16384  0
+libahci                36864  1 ahci
+psmouse               155648  0
+r8169                  90112  0
+lpc_ich                24576  0
+i2c_i801               32768  0
+realtek                24576  1
+rtsx_pci               77824  2 rtsx_pci_sdmmc,rtsx_pci_ms
+wmi                    32768  0
+video                  57344  1 i915
