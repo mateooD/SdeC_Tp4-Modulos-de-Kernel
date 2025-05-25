@@ -1,0 +1,1 @@
+savedcmd_/home/mateod/Documents/SdeC_Tp4-Modulos-de-Kernel/hello_world/hello.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/mateod/Documents/SdeC_Tp4-Modulos-de-Kernel/hello_world/hello.ko /home/mateod/Documents/SdeC_Tp4-Modulos-de-Kernel/hello_world/hello.o /home/mateod/Documents/SdeC_Tp4-Modulos-de-Kernel/hello_world/hello.mod.o

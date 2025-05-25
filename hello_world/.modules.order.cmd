@@ -1,0 +1,1 @@
+savedcmd_/home/mateod/Documents/SdeC_Tp4-Modulos-de-Kernel/hello_world/modules.order := {   echo /home/mateod/Documents/SdeC_Tp4-Modulos-de-Kernel/hello_world/hello.o; :; } > /home/mateod/Documents/SdeC_Tp4-Modulos-de-Kernel/hello_world/modules.order
